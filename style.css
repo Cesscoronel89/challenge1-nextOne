@@ -1,0 +1,296 @@
+body {
+    background:#c082e4;
+    box-sizing: border-box;
+  }
+
+  h1{
+    text-align: center;
+    color: #f3f0f5;
+    border-color: #380457;
+  }
+  
+  /* logo */
+  
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    mix-blend-mode: darken;
+  }
+  
+  /* input */
+  
+  .text {
+    position: absolute;
+    width: 45%;
+    height: 30%;
+    left: 15%;
+    top: 29%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    border: none;
+    color: yellow;
+    outline: none;
+    background:#d9a4f8;
+    resize: none;
+  }
+  
+  .text::placeholder {
+    color: #630f94;
+    text-transform: capitalize;
+  }
+  
+  .text:hover {
+    border-bottom: solid 1px #0a3871;
+  }
+  
+  /* rectangulo */
+
+  .rectangulo {
+    position: absolute;
+    width: 27%;
+    height: 90%;
+    left: 70%;
+    margin-top: 2%;
+    background: #d9a4f8;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+  }
+  
+  .rectangulo .botonCopiar {
+    display: inline;
+    padding: 24px;
+    position: absolute;
+    width: 80%;
+    background:#9f02fa ;
+    border-radius: 24px;
+    flex: none;
+    margin: 0px 24px;
+    font-family: "Inter";
+    font-style:oblique;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    top:82%;
+  }
+    
+  .boton:hover {
+    background-color:orange;
+    color:#08d6fa;
+    border-color: black;
+    font-size: 1.3rem;
+  }
+ 
+  
+  /* muñeco */
+  
+  .muñeco {
+    position:relative;
+    display: flex;
+    margin: 10% auto;
+    width: 100%;
+    top: 20px;
+    mix-blend-mode:multiply;
+    height: max-content;
+  }
+  
+  /* mensaje encontrado */
+  
+  .mjerect .mensajeEncontrado {
+    top: 320px;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:large;
+    padding: 15px;
+    color: #380457;
+  }
+  
+  .mensajeEncontrado::first-letter {
+    text-transform: uppercase;
+  }
+  
+  /* mensaje encriptado */
+  
+  .mensajeEncriptado {
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 90%;
+    height: 70%;
+    top: 20px;
+    flex: auto;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0 auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343a40;
+  }
+  
+  /* ingrese texto */
+  
+  .ingresaTexto {
+    width: 300px;
+    height: auto;
+    top: 400px;
+    flex: auto;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0 auto;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+  }
+  
+  .ingresaTexto::first-letter {
+    text-transform: uppercase;
+  }
+  
+  /* solo minusculas  */
+  
+  .letras {
+    position: absolute;
+    left: 16%;
+    top: 70%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    margin: 0px 8px;
+    padding-left: 2rem;
+  }
+  
+  /* vector */
+  
+  .vector {
+    position: absolute;
+    left: -5%;
+    width: 10%;
+    mix-blend-mode: darken;
+  }
+  
+  /* botones */
+  
+  .contenedorBotones {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    width: 50%;
+  }
+  
+  .contenedorBotones .botonEncriptar {
+    display: inline;
+    padding: 24px;
+    position: static;
+    width: 40%;
+    background:#9f02fa ;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+    font-family: "Inter";
+    font-style:oblique;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .botonEncriptar:hover {
+    background-color: red;
+    color: blue;
+    border-color: black;
+    font-size: 1.3rem;
+}
+
+  
+  .contenedorBotones .botonDesencriptar {
+    display: inline;
+    padding: 24px;
+    position: static;
+    width: 40%;
+    background: #d8dfe8;
+    box-sizing: border-box;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+    font-family: "Inter";
+    font-style:oblique;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+    cursor: pointer;
+  }
+
+  .contenedorBotones .botonDesencriptar::first-letter {
+    text-transform: uppercase;
+  }
+
+  .botonDesencriptar:hover {
+    background-color: green;
+    color: yellow;
+    border-color: var(--color-principal);
+    font-size: 1.3rem;
+  }
+
+  footer {
+        position: absolute;
+        width:auto;
+        top: 93%;
+        left: 3%;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 19px;
+        text-align: center;
+        color:#380457; 
+        
+      }   
+
+      .img-git{
+          width: 25px;
+          height: 25px;
+          mix-blend-mode: multiply;
+
+      }
+
+      .img-lin{
+        width: 30px;
+          height: 30px;
+          mix-blend-mode: multiply;
+          mix-blend-mode: darken;
+      }
+
+
+
+  
+ 
