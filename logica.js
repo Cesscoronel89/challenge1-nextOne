@@ -25,8 +25,7 @@ let encriptar = function () {
   if (input.value == "" || true == r) {
     mensajeEncontrado.textContent = "Ingrese un texto";
     mensajeEncontrado.className = "mensajeEncontrado";
-    ingresaTexto.textContent =
-      "Ingresa el texto que deseas encriptar o desencriptar";
+    
     muñeco.style.display = "inherit";
     botonCopiar.style.display = "none";
     input.focus();
