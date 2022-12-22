@@ -1,8 +1,16 @@
+
 body {
+    margin: 0;
     background:#c082e4;
     box-sizing: border-box;
+    height: 100vh;
+    position:relative;
+    padding-bottom: 0;
   }
 
+  div{
+    height: 100vh;
+  }
   h1{
     text-align: center;
     color: #f3f0f5;
@@ -52,9 +60,19 @@ body {
   }
   
   /* rectangulo */
-
   .rectangulo {
+    height: 550px;
+    width: 250px;
+    left: 1000px;
+    top: 40px;
+    border-radius: 32px;
+    background: #d9a4f8;
     position: absolute;
+    } 
+  
+  
+  /*.rectangulo {
+    position: relative;
     width: 27%;
     height: 90%;
     left: 70%;
@@ -62,9 +80,9 @@ body {
     background: #d9a4f8;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
-  }
+  }*/
   
-  .rectangulo .botonCopiar {
+  .botonCopiar {
     display: inline;
     padding: 24px;
     position: absolute;
@@ -90,7 +108,7 @@ body {
     border-color: black;
     font-size: 1.3rem;
   }
- 
+
   
   /* muñeco */
   
@@ -107,8 +125,9 @@ body {
   /* mensaje encontrado */
   
   .mjerect .mensajeEncontrado {
+    display: flex;
+    text-align: center;
     top: 320px;
-    margin-left: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size:large;
     padding: 15px;
@@ -144,8 +163,8 @@ body {
   /* ingrese texto */
   
   .ingresaTexto {
-    width: 300px;
-    height: auto;
+    width: 240px;
+    height: min-content;
     top: 400px;
     flex: auto;
     align-self: stretch;
@@ -259,23 +278,7 @@ body {
     color: yellow;
     border-color: var(--color-principal);
     font-size: 1.3rem;
-  }
-
-  footer {
-        position: absolute;
-        width:auto;
-        top: 93%;
-        left: 3%;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.3rem;
-        line-height: 19px;
-        text-align: center;
-        color:#380457; 
-        
-      }   
-
+  }  
       .img-git{
           width: 25px;
           height: 25px;
@@ -289,8 +292,3 @@ body {
           mix-blend-mode: multiply;
           mix-blend-mode: darken;
       }
-
-
-
-  
- 
